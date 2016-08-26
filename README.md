@@ -2,7 +2,7 @@
 
 #### A mock website for a pizza place, August 26 2016
 
-#### By Katy Henning**
+#### By Katy Henning
 
 ## Description
 

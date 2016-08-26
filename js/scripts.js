@@ -39,7 +39,7 @@ $(document).ready(function() {
     event.preventDefault();
     var inputtedTopping = $('.chk :checked').each(function() {
         return($(this).val());
-    }).get();
+        }).get();
     var inputtedSize = $("#size").val();
     var newPizza = new Pizza([inputtedTopping], inputtedSize);
     $("#total").text(newPizza.cost());
