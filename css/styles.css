@@ -1,7 +1,26 @@
 .jumbotron {
   text-align: center;
+  background-image: url(../img/background1.jpeg);
+  background-color: #1B1A18;
+  background-repeat: no-repeat;
+  min-height: 700px;
+  color: white;
+  font-family: 'Italiana', serif;
+  text-shadow: 3px 0px 9px rgba(0, 0, 0, 1);
 }
 
 #addToppings {
+  display: none;
+}
+
+#totalHeader {
+  display: none;
+}
+
+body {
+font-family: 'Source Sans Pro', sans-serif;
+}
+
+#thankYouMessage {
   display: none;
 }

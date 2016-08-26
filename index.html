@@ -8,6 +8,7 @@
     <script src="js/jquery-3.1.0.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/scripts.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Italiana|Source+Sans+Pro" rel="stylesheet">
     <title>Mama's Pizza Ristorante</title>
   </head>
   <body>
@@ -23,16 +24,16 @@
           <form>
             <h4 id="toppingDiv">Select toppings:</h4>
             <label class="checkbox">
-              <input class="checkbox" type="checkbox" value="Pepperoni">Pepperoni</option>
+              <input class="chk" type="checkbox" value="Pepperoni">Pepperoni</option>
             </label>
             <label class="checkbox">
-              <input class="checkbox" type="checkbox" value="Mushrooms">Mushrooms</option>
+              <input class="chk" type="checkbox" value="Mushrooms">Mushrooms</option>
             </label>
             <label class="checkbox">
-              <input class="checkbox" type="checkbox" value="Artichoke">Artichoke</option>
+              <input class="chk" type="checkbox" value="Artichoke">Artichoke</option>
             </label>
             <label class="checkbox">
-              <input class="checkbox" type="checkbox" value="Olives">Olives</option>
+              <input class="chk" type="checkbox" value="Olives">Olives</option>
             </label>
             </select>
         </div>
@@ -43,7 +44,7 @@
                <option value="Medium">Medium</option>
                <option value="Large">Large</option>
              </select>
-             <button id="buttonId" type="submit">Submit</button>
+             <button id="buttonId" type="submit">See my Total</button>
          </form>
 
          </div>
@@ -51,7 +52,14 @@
              <!--empty columns!-->
          </div>
       </div>
-      <p> You're total is $<span id="total"></span></p>
+      <hr>
+      <div id="totalHeader"> <h3>You're total is $<span id="total"></span></h3>
+        <br>
+        <button id="thankYou">Click here to place your order!</button>
+      </div>
+      <div id="thankYouMessage"><h3>Thank you! You're pizza will be ready in 15 minutes</h3>
+        <button id="resetpage">Okay!</button>
+      </div>
     </div>
   </body>
 </html>
