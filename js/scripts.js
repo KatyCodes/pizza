@@ -1,8 +1,9 @@
 //business
 
-function Pizza(topping, size) {
+function Pizza(topping, size, addTopping) {
   this.pTopping = topping;
   this.pSize = size;
+  this.pAddTopping = addTopping
 }
 
 Pizza.prototype.cost = function() {
@@ -30,15 +31,19 @@ Pizza.prototype.cost = function() {
 }
 
 
-//ui
+//ui//////////////////////////////////
 $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
-    var inputtedTopping = $("#topping").val();
+    var allVars = [];
+    var inputtedTopping = $('.checkbox :checked').each(function() {
+        alert($(this).val());
+    }).get();
+      console.log(allVars);
+    var inputtedTopping2 = $("#topping2").val();
     var inputtedSize = $("#size").val();
 
     var newPizza = new Pizza(inputtedTopping, inputtedSize);
-    $("#paragraph").text(newPizza.cost());
-
+    $("#total").text(newPizza.cost());
   });
 });
