@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta charset="utf-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="css/styles.css" rel="stylesheet" text="text/css">
+    <script src="js/jquery-3.1.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Mama's Pizza Ristorante</title>
+  </head>
+  <body>
+    <div class="jumbotron">
+      <h1>Welcome to Mama's Pizza Ristorante.</h1>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <!--empty columns!-->
+        </div>
+        <div class="col-md-5">
+          <form>
+            <h4>Select toppings:</h4>
+            <select class="form-control" id="toppings">
+              <option value = "pepperoni">Pepperoni</option>
+              <option value = "artichoke">Artichoke</option>
+              <option value = "tomatoes">Tomatoes</option>
+              <option value = "olives">Olives</option>
+            </select>
+            <button id="toppingBtn" type="submit">Add topping to my pizza</button>
+            <br>
+            <h4>Select a size:</h4>
+            <select class="form-control" id="size">
+              <option value = "large">Large</option>
+              <option value = "8">Medium</option>
+              <option value = "7">Small</option>
+            </select>
+            <br>
+            <button type="sizeBtn">Place my order</button>
+          </form>
+        </div>
+         <div class="col-md-5">
+           <ul id="pizzaToppings">
+           </ul>
+           <!-- <button type="submit" id="addToOrderBtn">Add this pizza to my order</button> -->
+         </div>
+         <div class="col-md-2">
+             <!--empty columns!-->
+         </div>
+      </div>
+    </div>
+  </body>
+</html>
