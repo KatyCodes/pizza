@@ -22,33 +22,28 @@
         <div class="col-md-5">
           <form>
             <h4>Select toppings:</h4>
-            <select class="form-control" id="toppings">
-              <option value = "pepperoni">Pepperoni</option>
-              <option value = "artichoke">Artichoke</option>
-              <option value = "tomatoes">Tomatoes</option>
-              <option value = "olives">Olives</option>
+            <select class="form-control" id="topping">
+              <option value="Pepperoni">Pepperoni</option>
+              <option value="Artichoke">Artichoke</option>
+              <option value="Olives">Olives</option>
+              <option value="Mushrooms">Mushrooms</option>
             </select>
-            <button id="toppingBtn" type="submit">Add topping to my pizza</button>
-            <br>
-            <h4>Select a size:</h4>
-            <select class="form-control" id="size">
-              <option value = "large">Large</option>
-              <option value = "8">Medium</option>
-              <option value = "7">Small</option>
-            </select>
-            <br>
-            <button type="sizeBtn">Place my order</button>
-          </form>
         </div>
          <div class="col-md-5">
-           <ul id="pizzaToppings">
-           </ul>
-           <!-- <button type="submit" id="addToOrderBtn">Add this pizza to my order</button> -->
+             <h4>Select Size:</h4>
+             <select class="form-control" id="size">
+               <option value="Small">Small</option>
+               <option value="Medium">Medium</option>
+               <option value="Large">Large</option>
+             </select>
+             <button id="buttonId" type="submit">Submit</button>
+         </form>
          </div>
          <div class="col-md-2">
              <!--empty columns!-->
          </div>
       </div>
+      <p id="paragraph"></p>
     </div>
   </body>
 </html>
